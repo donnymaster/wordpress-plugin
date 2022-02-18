@@ -1,0 +1,156 @@
+.tarif-list-page {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.tarif-list-page .header .title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.btn {
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #a3a3a3;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    color: white;
+}
+.btn:hover {
+    background-color: #858585;
+}
+
+.btn:active {
+    background-color: #535353;
+}
+
+.tarif-list-page .header .title .logo {
+    font-size: 18px;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.panel .search-wrapper {
+    position: relative;
+}
+.panel .search-wrapper input {
+    width: 300px;
+}
+.panel .search-wrapper svg {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.panel .group-btn {
+    display: flex;
+}
+
+.table {
+    margin: 0 0 40px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+}
+@media screen and (max-width: 580px) {
+    .table {
+        display: block;
+    }
+}
+
+.row {
+    display: table-row;
+    background: #f6f6f6;
+}
+.row:nth-of-type(odd) {
+    background: #e9e9e9;
+}
+.row.header {
+    font-weight: 900;
+    color: #ffffff;
+    background: #ea6153;
+}
+.row.green {
+    background: #00BA0F;
+}
+.row.blue {
+    background: #2980b9;
+}
+@media screen and (max-width: 580px) {
+    .row {
+        padding: 14px 0 7px;
+        display: block;
+    }
+    .row.header {
+        padding: 0;
+        height: 6px;
+    }
+    .row.header .cell {
+        display: none;
+    }
+    .row .cell {
+        margin-bottom: 10px;
+    }
+    .row .cell:before {
+        margin-bottom: 3px;
+        content: attr(data-title);
+        min-width: 98px;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #969696;
+        display: block;
+    }
+}
+
+.cell {
+    padding: 6px 12px;
+    display: table-cell;
+    font-size: 16px;
+}
+@media screen and (max-width: 580px) {
+    .cell {
+        padding: 2px 16px;
+        display: block;
+    }
+}
+
+
+.group-btn .btn:not(:last-child) {
+    margin-right: 15px;
+}
+
+.action-tariff {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.action-tariff div {
+    cursor: pointer;
+}
+
+.action-tariff .edit {
+    font-size: 30px;
+}
+
+.action-tariff .delete {
+    font-size: 20px;
+}
+
+.action-tariff div:not(:last-child) {
+    margin-right: 10px;
+}
